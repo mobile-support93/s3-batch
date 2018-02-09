@@ -83,7 +83,7 @@
 					Body: file.data
 				});
 
-				var putObjectRequest = self.s3.client.putObject( params );
+				var putObjectRequest = self.s3.putObject( params );
 			
 				putObjectRequest.on( 'error', function (e) {
 					self.fire( 'error', file , e);
